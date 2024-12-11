@@ -4,6 +4,8 @@ Time Complexity:
 Constructor: O(k) for the initial call to advance(), where k is the number of skipped elements at the start.
 advance(), next(): O(k) per call, where k is the number of skipped elements encountered.
 hasNext(), skip(int val): O(1) for most calls, with O(k) in the worst case for skip(int val) if advance() is called.
+                          O(k) if all the elements are skipped initially.Else it would be averagely O(1) if skip
+                          elements are random.
 
 Space Complexity: O(n), where n is the number of unique elements being skipped.
 */
